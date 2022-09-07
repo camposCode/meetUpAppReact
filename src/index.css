@@ -1,3 +1,11 @@
+:root{
+  --dark: #0b0c10;
+  --grey: #1F2833;
+  --greyLight: #C5C6C7;
+  --blue: #66FCF1;
+  --green: #45A29E;
+}
+
 *,
 *::after,
 *::before{
@@ -13,10 +21,8 @@ html{
 body{
   font-size: 1.5rem;
   font-family: 'Lato', sans-serif;
-}
-
-h1, h2{
-  color: #2c292b;
+  background-color: var(--dark);
+  color: var(--greyLight);
 }
 
 h1{
