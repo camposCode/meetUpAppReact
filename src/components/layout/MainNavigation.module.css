@@ -34,7 +34,7 @@
 .header a:hover,
 .header a:active,
 .header a.active{
-    color: var(--greylight);
+    color: #F7B733;
 }
 
 .badge{
