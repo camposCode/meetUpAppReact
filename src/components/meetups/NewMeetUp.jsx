@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import NewMeetUpForm from './NewMeetUpForm';
 
 const NewMeetUp = () => {
     return (
         <>
-            <h1>New MeetUp</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet libero itaque in tempora facilis ipsam labore, explicabo cupiditate commodi omnis similique delectus sapiente corrupti eaque? Nihil ex vel velit ipsam!</p>
+            <section>
+                <NewMeetUpForm />
+            </section>
         </>
     )
 }
