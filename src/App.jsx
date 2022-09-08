@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Layout from "./components/layout/Layout";
+import NewMeetUp from "./components/meetups/NewMeetUp";
 import AllMeetUp from "./pages/AllMeetUp";
 import Favorites from "./pages/Favorites";
-import NewMeetUp from "./pages/NewMeetUp";
 
 function App() {
   return (
