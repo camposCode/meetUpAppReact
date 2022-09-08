@@ -26,10 +26,13 @@ body{
 }
 
 h1{
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-align: center;
-  padding: 1rem;
+  padding: 9rem 0 4rem 0;
   color: var(--blue);
+  margin-left: 15rem;
+  word-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 h2{
