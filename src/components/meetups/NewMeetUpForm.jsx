@@ -1,19 +1,34 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Card from '../UI/Card';
-import classes from './NewMeetUpForm.module.css'
+import classes from './NewMeetUpForm.module.css';
 
-const NewMeetUpForm = (props) => {
+const NewMeetUpForm = () => {
+    const titleInputRef = useRef();
+    const imageInputRef = useRef();
+    const addressInputRef = useRef();
+    const descriptionInputRef = useRef();
+
+    function submitHandler(e){
+        e.preventDefault();
+        const enteredTitle = titleInputRef.current.value;
+        
+
+    }
+
     return (
         <div className={ classes.cardContent }>
             <Card>
-                <form action="" className={ classes.form }>
+                <form action="" 
+                    className={ classes.form } 
+                    onSubmit={ submitHandler }>
                     <div className={ classes.control }>
                         <label htmlFor="">MeetUp Title</label>
                         <input 
                             type="text" 
                             required
                             id='title'
-                            placeholder='insert new MeetUp'/>
+                            placeholder='insert new MeetUp'
+                            ref={ titleInputRef }/>
                     </div>
                     <div className={ classes.control }>
                         <label 
@@ -23,7 +38,8 @@ const NewMeetUpForm = (props) => {
                             type="url" 
                             required
                             id='image'
-                            placeholder='insert MeetUp image'/>
+                            placeholder='insert MeetUp image'
+                            ref={ imageInputRef }/>
                     </div>
                     <div className={ classes.control }>
                         <label 
@@ -33,18 +49,20 @@ const NewMeetUpForm = (props) => {
                             type="text" 
                             required
                             id='address'
-                            placeholder='insert MeetUp image'/>
+                            placeholder='insert MeetUp image'
+                            ref={ addressInputRef }/>
                     </div>
                     <div className={ classes.control }>
                         <label 
                             htmlFor="description"
-                        >Address</label>
+                        >Description</label>
                         <textarea 
                             name="" 
                             id="description" 
                             rows="5"
                             required
-                            placeholder='insert MeetUp Description'>
+                            placeholder='insert MeetUp Description'
+                            ref={ descriptionInputRef }>
                         </textarea>
                     </div>
                     <div className={ classes.actions }>
