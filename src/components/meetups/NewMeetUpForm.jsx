@@ -11,8 +11,18 @@ const NewMeetUpForm = () => {
     function submitHandler(e){
         e.preventDefault();
         const enteredTitle = titleInputRef.current.value;
-        
+        const enteredImage = imageInputRef.current.value;
+        const enteredAddress = addressInputRef.current.value;
+        const enteredDescription = descriptionInputRef.current.value;
 
+        const meetupData = {
+            title: enteredTitle,
+            image: enteredImage,
+            address: enteredDescription,
+            description: enteredDescription
+        };
+
+        console.log(meetupData);
     }
 
     return (
@@ -58,6 +68,7 @@ const NewMeetUpForm = () => {
                         >Description</label>
                         <textarea 
                             name="" 
+                            type='text'
                             id="description" 
                             rows="5"
                             required
@@ -75,3 +86,4 @@ const NewMeetUpForm = () => {
 }
 
 export default NewMeetUpForm
+        

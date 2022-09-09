@@ -62,4 +62,9 @@ textarea::placeholder{
     padding-top: 7rem;
 }
 
+input[type=text], input[type=url], textarea{
+    color: var(--blue);
+}
+
+
 
