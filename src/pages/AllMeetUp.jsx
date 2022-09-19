@@ -5,7 +5,7 @@ import MeetUpList from '../components/meetups/MeetUpList';
 
 function AllMeetupsPage() {
     const[isLoading, setIsLoading] = useState(true);
-    const[loadedMeetups, setLoadedMeetup] = useState([]);
+    const[loadedMeetups, setLoadedMeetups] = useState([]);
 
     useEffect(() => {
         setIsLoading(true);
@@ -26,7 +26,7 @@ function AllMeetupsPage() {
 
 
             setIsLoading(false); 
-            setLoadedMeetup(meetups);
+            setLoadedMeetups(meetups);
         }); 
     }, [])
 

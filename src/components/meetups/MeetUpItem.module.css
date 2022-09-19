@@ -34,7 +34,7 @@
     font: inherit;
     cursor: pointer;
     color: var(--dark);
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 3rem;
     background-color: var(--blue);
     font-size: 2rem;
