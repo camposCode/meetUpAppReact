@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
-import { FavoritescontextProvider } from './store/favorites-context';
+import { FavoritesContextProvider } from './store/favorites-context';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <FavoritescontextProvider>
-    <React.StrictMode>
+  
+  <FavoritesContextProvider>
     <App />
-  </React.StrictMode>
-  </FavoritescontextProvider>
+  </FavoritesContextProvider>
+  //   <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>
 );
 
