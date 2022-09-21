@@ -1,12 +1,16 @@
 import React from 'react'
+import { useContext } from 'react';
+import MeetupList from '../components/meetups/MeetUpList';
+import FavoritesContext from '../store/favorites-context';
 
 const Favorites = () => {
-    return (
-        <>
-            <h1>Favorites</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolores corporis quae reprehenderit voluptatum soluta nihil aut adipisci velit, laboriosam minima at vel aperiam accusamus eos nam quod deserunt hic.</p>
-        </>
-    )
+
+    const favoritesCtx = useContext(FavoritesContext); 
+
+    return <section>
+        <h1>My Favorites</h1>
+        <MeetupList meetups = { favoritesCtx.favorites }/>
+    </section>
 }
 
-export default Favorites
+export default Favorites;
