@@ -40,8 +40,8 @@
 }
 
 .badge{
-    background-color: #cc2062;
-    color: var(--greylight);
+    background-color: #F7B733;
+    color: var(--green);
     border-radius: 1.2rem;
     padding: 0 1rem;
     margin-left: 0.5rem;
